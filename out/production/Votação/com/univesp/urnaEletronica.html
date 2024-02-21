@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>UnaEletronica HTML</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <main class="content">
+    <div class="card">
+        <div id="urnaEletronica">
+            <script>
+                const urnaEletronicasList = document.getElementById('urnaEletronica')
+                new URLSearchParams(window.location.search).forEach(
+                    (value, name)=>{
+                        urnaEletronicaList.append('${name}: ${value}')
+                        urnaEletronicaList.append(document.createElement('br'))
+                    }
+                }
+            </script>
+            <div class="login-button">
+                <button>
+                    <a href="./index.html#formulario">Voltar a Urna Eletrônica</a>
+                </button>
+            </div>
+            <form>
+                <div class="base">
+                    <div class="urna">
+                        <div class="tela">
+                            TELA
+                        </div>
+                    </div>
+                </div>
+                <div class="teclado">
+                    <div class="titulo">
+                        <img src="" alt="logo da urna">
+                        <h1>Urna Eletrônica</h1>
+                    </div>
+                    <div class="teclado-numerico">
+                        <div id="1" class="botao-numerico">
+                    <span>
+                        1
+                    </span>
+                        </div>
+                        <div id="2" class="botao-numerico">
+                    <span>
+                        2
+                    </span>
+                        </div>
+                        <div id="3" class="botao-numerico">
+                    <span>
+                        3
+                    </span>
+                        </div>
+                        <div id="4" class="botao-numerico">
+                    <span>
+                        4
+                    </span>
+                        </div>
+                        <div id="5" class="botao-numerico">
+                    <span>
+                        5
+                    </span>
+                        </div>
+                        <div id="6" class="botao-numerico">
+                    <span>
+                        6
+                    </span>
+                        </div>
+                        <div id="7" class="botao-numerico">
+                    <span>
+                        7
+                    </span>
+                        </div>
+                        <div id="8" class="botao-numerico">
+                    <span>
+                        8
+                    </span>
+                        </div>
+                        <div id="9" class="botao-numerico">
+                    <span>
+                        9
+                    </span>
+                        </div>
+                        <div id="0" class="botao-numerico">
+                    <span>
+                        0
+                    </span>
+                        </div>
+                        <div class="teclado-de-acoes">
+                            <div id="branco" class="botao-branco">
+                    <span class="botao-acao">
+                        BRANCO
+                    </span>
+                            </div>
+                            <div id="corrige" class="botao-corrige">
+                    <span class="botao-acao">
+                        CORRIGIR
+                    </span>
+                            </div>
+                            <div id="confirma" class="botao-confirma">
+                    <span class="botao-acao">
+                        CONFIRMA
+                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    </main>
+</body>
+</html>
